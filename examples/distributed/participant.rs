@@ -11,8 +11,8 @@ enum Event {
 }
 
 pub struct Participant {
-    event_queue: EventQueue<Event>,
     network: Network,
+    event_queue: EventQueue<Event>,
     name: String,
     discovery_endpoint: Endpoint,
     public_addr: SocketAddr,
